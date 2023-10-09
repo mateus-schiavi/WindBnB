@@ -1,0 +1,64 @@
+.cards {
+    width: 220px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 10px;
+}
+
+.div-img {
+    width: 220px;
+    height: 160px;
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+}
+
+.image {
+    width: 220px;
+    height: 160px;
+    border-radius: 15px;
+} 
+
+.description {
+    width: 220px;
+    display: flex;
+    color: rgb(169, 163, 175);
+    align-items: center;
+    justify-content: space-between;
+}
+
+.material-symbols-outlined {
+    color: orangered;
+    
+}
+
+h4 {
+    color: black;
+}
+
+.title {
+    width: 220px;
+    word-wrap: break-word;
+}
+
+.host {
+    display: flex;
+    margin-right: 5px;
+
+}
+
+.superhost {
+    display: flex;
+    align-items: center;
+    font-size: 10px;
+    color: black;
+    border-radius: 10px;
+    border: 1px solid black;
+    margin: 1px 2px 1px 2px;
+}
+
+.rating-general {
+    display: flex;
+    align-items: center;
+}

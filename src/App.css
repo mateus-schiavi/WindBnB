@@ -1,0 +1,22 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.deep-base {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
+.base {
+  padding-left: 2rem;
+  padding-right: 2rem;
+  padding-top: 1.25rem;
+}
+
+.deep-cards {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
