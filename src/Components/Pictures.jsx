@@ -1,5 +1,5 @@
 import React from 'react'
-import './Pictures.css'
+import './pictures.css'
 import { LiaStarSolid } from 'react-icons/lia'
 
 const pictures = ({ beds, photo, rating, superHost, title, type }) => {

@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import "./App.css";
-import Pictures from "./Components/Pictures";
+import pictures from "./Components/pictures";
 
 
 function App() {
@@ -26,7 +26,7 @@ function App() {
   }, []);
 
   console.log(data);
-        
+
   
 
   return (
