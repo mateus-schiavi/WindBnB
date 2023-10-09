@@ -15,12 +15,6 @@ export default function Nav(props) {
               WindBnB
             </a>
             <form className="navigation-flex" role='search' onSubmit={props.fn}>
-              <input
-                className='navigation-control'
-                type='search'
-                placeholder='Add Guests'
-                aria-label='Search'
-              />
               <select
                 className='navigation-control' // Estilize conforme necessário
                 onChange={handleCityChange} // Manipulador de eventos para seleção de cidade
@@ -31,9 +25,6 @@ export default function Nav(props) {
                 <option value="Vaasa">Vaasa</option>
                 <option value="Oulu">Oulu</option>
               </select>
-              <button className='navigation-btn' type='submit'>
-                Search
-              </button>
             </form>
           </div>
         </nav>
