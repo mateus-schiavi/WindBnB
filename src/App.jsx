@@ -7,7 +7,7 @@ import { element } from "prop-types";
 function App() {
   const [data, setData] = useState([]);
   const [filterTable, setFilterTable] = useState([]);
-  const [selectedCity, setSelectedCity] = useState(""); // Estado para armazenar a cidade selecionada
+  const [selectedCity, setSelectedCity] = useState(""); 
 
   const getData = async () => {
     try {
@@ -28,7 +28,7 @@ function App() {
     const filteredData = data.filter(
       (element) =>
         element.maxGuests >= parseInt(text) &&
-        (selectedCity === "" || element.city === selectedCity) // Aplicar filtro da cidade
+        (selectedCity === "" || element.city === selectedCity) 
     );
 
     const images = filteredData.map((element) => element.photo);
@@ -51,7 +51,7 @@ function App() {
   return (
     <>
       <div className="container">
-        {/* Passar a função handleCityChange para o componente Nav */}
+       
         <Nav fn={handleFilter} onCityChange={handleCityChange}></Nav>
       </div>
 

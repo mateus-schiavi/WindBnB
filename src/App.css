@@ -2,7 +2,8 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family:'Courier New', Courier, monospace;
+  font-family: 'Courier New', Courier, monospace;
+  background-color: blanchedalmond;
 }
 
 #root {
@@ -26,13 +27,13 @@ main {
 }
 
 .ticket {
- overflow: hidden;
- height: 500px;
- width: 405px;
- border: none;
- border-radius: 10px;
- display: flex;
- flex-direction: column;
+  overflow: hidden;
+  height: 500px;
+  width: 405px;
+  border: none;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
 }
 
 .image-container {
@@ -41,7 +42,7 @@ main {
   width: 100%;
 }
 
-.image-container > img {
+.image-container>img {
   height: 100%;
   width: 100%;
   object-fit: cover;
@@ -106,8 +107,14 @@ main {
   white-space: nowrap;
 }
 
-.container {
+.navigation-container {
   display: flex;
   justify-content: space-between;
   width: 98%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+img {
+  height: 25px;
 }

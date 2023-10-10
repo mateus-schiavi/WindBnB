@@ -1,31 +1,48 @@
-import React from 'react'
+import React, { useState } from 'react'
 
 export default function Nav(props) {
+
+  const[isDialogOpen, setIsDialoOpen] = useState(false);
+  const[numberOfGuests, setNumberOfGuest] = useState(0);
+
   const handleCityChange = (e) => {
     const selectedCity = e.target.value;
-    props.onCityChange(selectedCity); // Chama a função para atualizar a cidade selecionada
+    props.onCityChange(selectedCity);
   };
+
+  const openDialog = () => {
+    setIsDialoOpen(true);
+  };
+
+  const closeDialog = () => {
+    setIsDialoOpen(false);
+  };
+
+  const updateNumberOfGuests = () => {
+    props.onNumberOfGuestsChange(numberOfGuests);
+  }
 
   return (
     <>
       <div>
         <nav className='navigation-bar'>
           <div className='navigation-container'>
-            <a className='navigation-logo' id='navigation-1' href="#">
-              WindBnB
-            </a>
-            <form className="navigation-flex" role='search' onSubmit={props.fn}>
-              <select
-                className='navigation-control' // Estilize conforme necessário
-                onChange={handleCityChange} // Manipulador de eventos para seleção de cidade
-              >
-                <option value="">All Cities</option> {/* Opção para mostrar todos */}
-                <option value="Helsinki">Helsinki</option>
-                <option value="Turku">Turku</option>
-                <option value="Vaasa">Vaasa</option>
-                <option value="Oulu">Oulu</option>
-              </select>
-            </form>
+            <img src="src\img\logo.svg" alt="" />
+            <div>
+              <form className="navigation-flex" role='search' onSubmit={props.fn}>
+                <select
+                  className='navigation-control'
+                  onChange={handleCityChange}
+                >
+                  <option value="">Whole, Finland</option>
+                  <option value="Helsinki">Helsinki</option>
+                  <option value="Turku">Turku</option>
+                  <option value="Vaasa">Vaasa</option>
+                  <option value="Oulu">Oulu</option>
+                </select>
+                <input type="text" className='guests' placeholder='Add Guests'/>
+              </form>
+            </div>
           </div>
         </nav>
       </div>
